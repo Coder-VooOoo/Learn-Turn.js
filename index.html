@@ -21,11 +21,11 @@
 </div>
 
 <script type="text/javascript" src="https://code.jquery.com/jquery-1.7.1.min.js"></script>
-<script type="text/javascript" src="js/turn.min.js"></script>
+<script type="text/javascript" src="js/turn.js"></script>
 <script>
+  /* 定义一个 `turned` 事件 */
   $('#magazine').bind('turned', function (e, page) {
     console.log('Current view: ', $('#magazine').turn('view'));
-
   })
   $('#magazine').turn({acceleration: true, shadows: true});
 </script>
